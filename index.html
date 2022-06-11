@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/77fa727d74.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Portofolio Kelompok Sprite</title>
+</head>
+<body>
+    <section class="sec">
+        <div class="toggle" onclick="darkmode()"><span class="darklight">Dark</span></div>
+        <div class="weather" onclick="popup()"><span>Weather</span></a></div>
+        <div class="running-text"><h1><span class="auto-input"></span></h1></div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content-popup">
+                <div class="close-btn" onclick="popup()">&times;</div>
+                <div class="weather-popup">
+                    <div class="container">
+                        <div class="search">
+                            <input type="text" class="search-bar">
+                            <button class="btn-src"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="data-weather">
+                            <h2 class="city">Cuaca di --</h2>
+                            <div class="icon-desc">
+                                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon-weather">
+                                <div class="desc">--</div>
+                            </div>
+                            <div class="temp">--°C</div>
+                            <div class="humidity">Kelembaban: --%</div>
+                            <div class="wind">Kecepatan angin: -- km/h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="margin-top">
+            <div class="card">
+                <div class="content">
+                    <div class="card-text">
+                        <div class="card-image">
+                            <img src="img/p1.jpg" alt="">
+                        </div>
+                        <h4>Ikram Tauffiqul Hakim</h4>
+                        <ul>
+                            <li>Lahir : Bandung, 25 April 2002</li>
+                            <li>Hobby : Desain Grafis</li>
+                            <li>Cita-cita : Bermanfaat bagi banyak orang</li>
+                        </ul>
+                    </div>
+                        <a class="button" href="https://www.instagram.com/ikramtfqh" target="_blank">
+                        <div class="icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <span>Instagram</span>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="card-text">
+                    <div class="card-image">
+                        <img src="img/p2.jpeg" alt="">
+                    </div>
+                    <h4>Rabby Fitriana Adawiyah</h4>
+                    <ul>
+                        <li>Lahir : Jakarta, 4 April 2002</li>
+                        <li>Hobby : Melukis</li>
+                        <li>Cita-cita : Sukses</li>
+                    </ul>
+                </div>
+                    <a class="button" href="https://www.instagram.com/ra.aby" target="_blank">
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <span>Instagram</span>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="margin-bottom">
+            <div class="card">
+                <div class="content">
+                    <div class="card-text">
+                        <div class="card-image">
+                            <img src="img/p3.jpg" alt="">
+                        </div>
+                        <h4>Muhammad Gilang Adhi Prasetyo</h4>
+                        <ul>
+                            <li>Lahir : Banyumas, 20 Mei 2002</li>
+                            <li>Hobby : Tidur</li>
+                            <li>Cita-cita : Masuk Surga</li>
+                        </ul>
+                    </div>
+                        <a class="button" href="https://www.instagram.com/muhammdg_" target="_blank">
+                        <div class="icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <span>Instagram</span>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    let typed = new Typed(".auto-input",{
+    strings: ["KELOMPOK SPRITE", "CYBER ACADEMY"],
+    typeSpeed: 150,
+    backSpeed: 50,
+    loop: true
+})
+</script>
+
+</body>
+</html>

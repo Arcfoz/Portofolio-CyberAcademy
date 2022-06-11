@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  background: linear-gradient(315deg, #ffffff, 0%, #d7e1ec 74%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+
+section.dark {
+  background: #24292d;
+}
+
+section .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 410px;
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin: 20px;
+  transition: background 0.5s;
+}
+
+section.dark .card {
+  background: #323840;
+}
+
+section .card .content,
+section .card .card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .card .card-text .card-image {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+section .card .card-text .card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .card .card-text h4 {
+  font-weight: 700;
+  width: 200px;
+  height: 60px;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section .card .card-text li {
+  padding-left: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  font-size: 0.7em;
+  height: 30px;
+  width: 250px;
+  list-style-type: none;
+  line-height: 25px;
+}
+
+section .card .card-text ul {
+  margin-bottom: 20px;
+}
+
+section.dark .card .card-text {
+  color: #ccc;
+}
+
+section .card .button {
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+section.dark .card .button {
+  background: #404852;
+  color: #fff;
+}
+
+section .card .button .icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 40px;
+}
+
+section .card .button:hover {
+  width: 150px;
+}
+
+section .card .button:hover .icon {
+  background: #e1306c;
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+
+section .card .content a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+section .card .button .icon i {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+section .card .button span{
+  font-weight: 500;
+  margin-left: 5px;
+  transition: all 0.3s ease-out;
+}
+
+section .toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e9f5ff;
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+section.dark .toggle {
+  background: #404852;
+  color: white;
+}
+
+.toggle:before {
+  content: "\f186";
+  font-family: fontAwesome;
+}
+
+section.dark .toggle:before {
+  content: "\f185";
+  color: #fff;
+}
+
+section .toggle .darklight {
+  margin-left: 10px;
+  user-select: none;
+}
+
+section .running-text {
+  position: absolute;
+  top: 50px;
+  width: 500px;
+  height: 60px;
+  font-size: 2em;
+  text-align: center;
+}
+
+section.dark .running-text {
+  color: #ccc;
+}
+
+@media screen and (max-width: 1020px) {
+  section {
+    align-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  section .margin-top {
+    margin-top: 300px;
+    background: bl;
+  }
+
+  section .margin-bottom {
+    margin-bottom: 100px;
+  }
+
+  section .toggle {
+    position: absolute;
+    top: 240px;
+    bottom: 0;
+    right: auto;
+  }
+
+  section .running-text {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+section .weather {
+  position: absolute;
+  bottom: 40px;
+}
+
+section .weather {
+  background: #404852;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+  user-select: none;
+  color: #e9f5ff;
+}
+
+section.dark .weather {
+  background: #e9f5ff;
+  color: #404852;
+}
+
+.weather:before {
+  content: "\f0c2";
+  font-family: fontAwesome;
+}
+
+section.dark .weather:before {
+  color: #404852;
+}
+
+section .weather span {
+  margin-left: 10px;
+  font-weight: 800;
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 400px;
+  height: 300px;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.popup .close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content-popup {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+.btn-src {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.city {
+  padding-top: 20px;
+}
+
+.data-weather {
+  margin-left: 20px;
+}
+
+.icon-desc{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
