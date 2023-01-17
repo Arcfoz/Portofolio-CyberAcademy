@@ -2,6 +2,7 @@
 # Portofolio-CyberAcademy
 
 Simple website, to complete study group assignments
+https://kelompoksprite.cyclic.app/
 
 
 
